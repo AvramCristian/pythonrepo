@@ -1,8 +1,12 @@
 def get_even_numbers(list):
-    list = [4,6,7,8]
     result = []
     for number in list:
-        if number % 2 == 0:
-            result.append(number)
-    print(result)
-get_even_numbers(list)
+        if type(number) == int:
+            if number % 2 == 0:
+                result.append(number)
+        else :
+            print("numar non int")
+    return result
+print(get_even_numbers([4,6,7,8,35,34]))
+
+
